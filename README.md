@@ -1,7 +1,7 @@
 # how to start
 
 ```
-npm run build
+npm install
 npm run dev
 ```
 
