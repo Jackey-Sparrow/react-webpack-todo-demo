@@ -5,15 +5,15 @@
 var path = require('path');
 //use the min file for not to loop the react's dependence
 var nodeModules = path.resolve(__dirname, 'node_modules');
-var pathToReact = path.resolve(nodeModules, 'react/dist/react.min.js');
+//var pathToReact = path.resolve(nodeModules, 'react/dist/react.min.js');
 
 module.exports = {
 	entry: ['webpack/hot/dev-server', path.resolve(__dirname, 'app/main.js')],
-	resolve: {
-		alias: {
-			'react': pathToReact
-		}
-	},
+	//resolve: {
+	//	alias: {
+	//		'react': pathToReact
+	//	}
+	//},
 	output: {
 		path: path.resolve(__dirname, 'build'),
 		filename: 'bundle.js'
@@ -22,7 +22,7 @@ module.exports = {
 		loaders: [{
 			test: /\.jsx?$/,
 			loader: 'babel'
-		}],
-		noParse: [pathToReact]
+		}]
+		//noParse: [pathToReact]
 	}
 };
