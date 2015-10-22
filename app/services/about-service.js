@@ -1,4 +1,4 @@
-export default class HelloWorldService {
+export default class AboutService {
     constructor(name, age, sex) {
         this.name = name;
         this.age = age;
