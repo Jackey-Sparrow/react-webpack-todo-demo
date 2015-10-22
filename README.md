@@ -1,4 +1,4 @@
-# how to strat
+# how to start
 
 ```
 npm run build
