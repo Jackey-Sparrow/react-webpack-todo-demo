@@ -8,7 +8,7 @@ var nodeModules = path.resolve(__dirname, 'node_modules');
 //var pathToReact = path.resolve(nodeModules, 'react/dist/react.min.js');
 
 module.exports = {
-	entry: ['webpack/hot/dev-server', path.resolve(__dirname, 'app/main.js')],
+	entry: ['webpack/hot/dev-server', path.resolve(__dirname, 'app/app.js')],
 	//resolve: {
 	//	alias: {
 	//		'react': pathToReact

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DashComponent from './dash-component';
-import AboutComponent from './about-component';
+import DashComponent from './dash/dash-module';
+import AboutComponent from './about/about-module';
 import { Router, Route, Link } from 'react-router/umd/ReactRouter'
 
 main();
