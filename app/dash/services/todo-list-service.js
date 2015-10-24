@@ -18,13 +18,24 @@ class TodoList {
         return this.todoList;
     }
 
-    addTodoList(todo){
+    getNextId() {
+        var result = 1, i = 0;
+        for (; i < this.todoList.length; i++) {
+            var id = this.todoList[i].id;
+            if (id > result) {
+                result = id;
+            }
+        }
+        return ++result;
+    }
+
+    addTodoList(todo:Object) {
+        //todo.id = this.getNextId();
+        console.log(this);
         this.todoList.push(todo);
     }
 
-    getNextId(){
 
-    }
 }
 
 export default TodoList;

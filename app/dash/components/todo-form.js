@@ -1,11 +1,18 @@
 import React from 'react';
+import TodoListService from './../services/todo-list-service';
 
 export default React.createClass({
     onSubmit: function (e) {
         e.preventDefault();
-        var description = this.refs.description.value.trim();
-        var date = this.refs.todoDate.value.trim();
-        console.log(date);
+        var description = this.refs.description.value.trim(),
+            date = this.refs.todoDate.value.trim();
+        //todo:validation
+        var todo = {
+            description: description,
+            date: date
+        };
+        console.log(this);
+        this.props.addTodo(todo);
     },
 
     render: function () {
