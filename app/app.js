@@ -5,9 +5,9 @@ import AboutComponent from './about/about-module';
 import { Router, Route, Link } from 'react-router/umd/ReactRouter';
 import './common/content/css/main.css';
 
-main();
+run();
 
-function main() {
+function run() {
 
 	ReactDOM.render(
 		<Router>
