@@ -17,6 +17,14 @@ class TodoList {
     getTodoList() {
         return this.todoList;
     }
+
+    addTodoList(todo){
+        this.todoList.push(todo);
+    }
+
+    getNextId(){
+
+    }
 }
 
 export default TodoList;

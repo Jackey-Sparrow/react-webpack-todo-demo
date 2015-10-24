@@ -29,3 +29,9 @@
 .todo-container .todo-lists .todo-item .todo-date{
     width: 15%;
 }
+
+.todo-form input{
+    width: 200px;
+    height: 30px;
+    margin-right: 20px;
+}
