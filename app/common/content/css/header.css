@@ -12,21 +12,29 @@
     height: 60px;
 }
 
-.header-container ul li{
+.header-container ul li {
     min-width: 100px;
     height: 60px;
     display: inline-block;
     overflow: hidden;
 }
 
-.header-container ul .logo{
-    width: 105px;
+.header-container ul .logo {
+    width: 115px;
     height: 60px;
     /*background: url('/common/content/images/logo.png');*/
-    background: url('/images/logo.png');
+    background: url('/images/logo.png') left center no-repeat;
 }
 
-.header-container ul li a{
+.header-container ul .active {
+    background: #006bc7;
+}
+
+.header-container ul .nav-tab:hover {
+    background: #0c77d1;
+}
+
+.header-container ul li a {
     font-size: 16px;
     color: #fff;
     width: 104px;

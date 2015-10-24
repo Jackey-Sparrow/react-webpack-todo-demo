@@ -11,12 +11,12 @@ export default class TodoList extends React.Component {
     render() {
         var todoList = this.todoList.map(function (todo) {
             return (
-                <div>{todo.description} {todo.date}</div>
+                <div key={todo.id}>{todo.description} {todo.date}</div>
             );
         });
 
         return (
-            <div className='todo-list'>{todoList}</div>
+            <div className='todo-lists'>{todoList}</div>
         );
     }
 }

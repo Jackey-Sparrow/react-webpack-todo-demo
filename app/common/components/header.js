@@ -7,8 +7,9 @@ class Header extends React.Component {
         return (
             <div className='header-container'>
                 <ul>
-                    <li><Link to='/' activeClassName="active" className="logo"></Link></li>
-                    <li><Link to='/about' activeClassName="active">关于</Link></li>
+                    <li><Link to='/' className="logo"></Link></li>
+                    <li className="nav-tab"><Link to='/' activeClassName="active">首页</Link></li>
+                    <li className="nav-tab"><Link to='/about' activeClassName="active">关于</Link></li>
                 </ul>
             </div>
         )
