@@ -16,6 +16,7 @@ module.exports = {
     //},
     output: {
         path: path.resolve(__dirname, 'build'),
+        publicPath:'http://localhost:8080/',
         filename: 'bundle.js'
     },
     module: {
@@ -25,6 +26,9 @@ module.exports = {
         }, {
             test: /\.css$/,
             loader: 'style!css'
+        }, {
+            test: /\.(png|jpg)$/,
+            loader: 'url-loader?limit=8192'
         }]
         //noParse: [pathToReact]
     }

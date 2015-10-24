@@ -1,14 +1,14 @@
 import React from 'react';
 import { Router, Route, Link, History, Lifecycle } from 'react-router';
+import './../content/css/header.css';
 
 class Header extends React.Component {
     render() {
         return (
-            <div>
-                <h1 id='header'>Hi, React</h1>
-                <ul className='dddd'>
-                    <li><Link to='/' activeClassName="active">home</Link></li>
-                    <li><Link to='/about' activeClassName="active">about</Link></li>
+            <div className='header-container'>
+                <ul>
+                    <li><Link to='/' activeClassName="active" className="logo"></Link></li>
+                    <li><Link to='/about' activeClassName="active">关于</Link></li>
                 </ul>
             </div>
         )

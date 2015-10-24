@@ -1,3 +1,11 @@
-#header {
-    color: red;
+body {
+    padding: 0px;
+    margin: 0px;
+    font: 13px/1.6em "Helvetica Neue", Arial, "Microsoft Yahei", sans-serif;
+    background: #e4e4e4;
+}
+
+a{
+    text-decoration: none;
+    text-underline: none;
 }
