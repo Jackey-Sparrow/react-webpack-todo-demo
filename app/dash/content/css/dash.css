@@ -2,3 +2,30 @@
     width: 80%;
     margin: 0 auto;
 }
+
+.todo-container .todo-lists{
+    width: 100%;
+}
+
+.todo-container .todo-lists .title{
+    font-weight: bold;
+}
+
+.todo-container .todo-lists .todo-item{
+    width: 100%;
+    height: 30px;
+}
+
+.todo-container .todo-lists .todo-item .todo-field{
+    float: left;
+}
+
+.todo-container .todo-lists .todo-item .todo-id{
+    width: 10%;
+}
+.todo-container .todo-lists .todo-item .todo-description{
+    width: 30%;
+}
+.todo-container .todo-lists .todo-item .todo-date{
+    width: 15%;
+}
