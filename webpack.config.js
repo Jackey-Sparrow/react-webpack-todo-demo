@@ -8,21 +8,24 @@ var nodeModules = path.resolve(__dirname, 'node_modules');
 //var pathToReact = path.resolve(nodeModules, 'react/dist/react.min.js');
 
 module.exports = {
-	entry: ['webpack/hot/dev-server', path.resolve(__dirname, 'app/app.js')],
-	//resolve: {
-	//	alias: {
-	//		'react': pathToReact
-	//	}
-	//},
-	output: {
-		path: path.resolve(__dirname, 'build'),
-		filename: 'bundle.js'
-	},
-	module: {
-		loaders: [{
-			test: /\.jsx?$/,
-			loader: 'babel'
-		}]
-		//noParse: [pathToReact]
-	}
+    entry: ['webpack/hot/dev-server', path.resolve(__dirname, 'app/app.js')],
+    //resolve: {
+    //	alias: {
+    //		'react': pathToReact
+    //	}
+    //},
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: 'bundle.js'
+    },
+    module: {
+        loaders: [{
+            test: /\.jsx?$/,
+            loader: 'babel'
+        }, {
+            test: /\.css$/,
+            loader: 'style!css'
+        }]
+        //noParse: [pathToReact]
+    }
 };

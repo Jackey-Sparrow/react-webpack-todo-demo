@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutService from './services/about-service';
-import Header from './../common/components/header-component';
+import Header from './../common/components/header';
 
 var service = new AboutService('Jackey', 26, 'male');
 

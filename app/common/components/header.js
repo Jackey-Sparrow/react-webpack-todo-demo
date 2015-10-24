@@ -5,8 +5,8 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-                <h1>Hi, React</h1>
-                <ul>
+                <h1 id='header'>Hi, React</h1>
+                <ul className='dddd'>
                     <li><Link to='/' activeClassName="active">home</Link></li>
                     <li><Link to='/about' activeClassName="active">about</Link></li>
                 </ul>
