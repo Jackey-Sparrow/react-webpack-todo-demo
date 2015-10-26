@@ -12,6 +12,7 @@ export default  React.createClass({
     componentDidMount: function () {
         this.pubsub = PubSub.subscribe('reloadTodoList', function () {
             debugger;
+
             this.setState({
                 todoList: TodoListService.getTodoList()
             });

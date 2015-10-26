@@ -21,3 +21,7 @@ http://localhost:8080/
 # todo
 
 load css background img(url-loader)
+
+# issue
+
+there is a problem when I try to setState
