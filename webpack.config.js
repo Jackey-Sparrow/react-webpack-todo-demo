@@ -28,7 +28,7 @@ module.exports = {
             loader: 'style!css'
         }, {
             test: /\.(png|jpg)$/,
-            loader: 'url-loader?limit=8192'
+            loader: 'url-loader?minetype=image/png'
         }]
         //noParse: [pathToReact]
     }
