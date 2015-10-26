@@ -32,9 +32,21 @@ class TodoList {
     addTodo(todo:Object) {
         todo.id = this.getNextId();
         this.todoList.push(todo);
-        console.log(this);
     }
 
+    removeTodoById(id) {
+        if (!id) {
+            return;
+        }
+        for (var i = 0; i < this.todoList.length; i++) {
+            if (this.todoList[i].id === id) {
+                console.log(id);
+                debugger;
+                this.todoList.splice(i, 1);
+                break;
+            }
+        }
+    }
 
 }
 
