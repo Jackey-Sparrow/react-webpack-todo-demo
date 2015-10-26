@@ -5,17 +5,20 @@ import PubSub from 'pubsub-js';
 export default  React.createClass({
     getInitialState: function () {
         return {
-            todoList:TodoListService.getTodoList()
+            todoList: TodoListService.getTodoList()
         }
     },
     componentDidMount: function () {
-        PubSub.subscribe('reloadTodoList', function () {
+        this.pubsub = PubSub.subscribe('reloadTodoList', function () {
             this.setState({
-                todoList:TodoListService.getTodoList()
+                todoList: TodoListService.getTodoList()
             });
         }.bind(this));
     },
-    render:function() {
+    componentWillUnmount: function () {
+        PubSub.unsubscribe(this.pubsub);
+    },
+    render: function () {
         var todoList = this.state.todoList.map(function (todo) {
             return (
                 <div className='todo-item' key={todo.id}>
