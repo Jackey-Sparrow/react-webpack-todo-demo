@@ -29,13 +29,15 @@ class TodoList {
         return ++result;
     }
 
-    addTodoList(todo:Object) {
-        //todo.id = this.getNextId();
-        console.log(this);
+    addTodo(todo:Object) {
+        todo.id = this.getNextId();
         this.todoList.push(todo);
+        console.log(this);
     }
 
 
 }
 
-export default TodoList;
+var TodoListServie = new TodoList();
+
+export default TodoListServie;

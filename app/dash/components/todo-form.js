@@ -11,8 +11,7 @@ export default React.createClass({
             description: description,
             date: date
         };
-        console.log(this);
-        this.props.addTodo(todo);
+        TodoListService.addTodo(todo);
     },
 
     render: function () {
