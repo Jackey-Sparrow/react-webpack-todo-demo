@@ -22,8 +22,6 @@
 .header-container ul .logo {
     width: 115px;
     height: 60px;
-    /*background: url('/common/content/images/logo.png');*/
-    /*background: url('/images/logo.png') left center no-repeat;*/
 }
 
 .header-container ul .active {
