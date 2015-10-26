@@ -1,9 +1,22 @@
 import React from 'react';
+import TodoListService from './../services/todo-list-service';
+import PubSub from 'pubsub-js';
 
-export default class TodoList extends React.Component {
-
-    render() {
-        var todoList = this.props.todoList.map(function (todo) {
+export default  React.createClass({
+    getInitialState: function () {
+        return {
+            todoList:TodoListService.getTodoList()
+        }
+    },
+    componentDidMount: function () {
+        PubSub.subscribe('reloadTodoList', function () {
+            this.setState({
+                todoList:TodoListService.getTodoList()
+            });
+        }.bind(this));
+    },
+    render:function() {
+        var todoList = this.state.todoList.map(function (todo) {
             return (
                 <div className='todo-item' key={todo.id}>
                     <div className='todo-id todo-field'>{todo.id}</div>
@@ -24,4 +37,4 @@ export default class TodoList extends React.Component {
             </div>
         );
     }
-}
+});

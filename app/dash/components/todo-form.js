@@ -1,5 +1,6 @@
 import React from 'react';
 import TodoListService from './../services/todo-list-service';
+import PubSub from 'pubsub-js';
 
 export default React.createClass({
     onSubmit: function (e) {
@@ -12,6 +13,7 @@ export default React.createClass({
             date: date
         };
         TodoListService.addTodo(todo);
+        PubSub.publish('reloadTodoList');
     },
 
     render: function () {
