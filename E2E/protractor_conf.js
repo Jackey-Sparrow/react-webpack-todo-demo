@@ -12,11 +12,13 @@ exports.config = {
     // Spec patterns are relative to the current working directly when
     // protractor is called.
     specs: [
-        'test.js'
+        'todo-test.js'
     ],
     onPrepare: function () {
-        browser.ignoreSynchronization = true;
-        require('./locator/locatorExtend.js')(protractor);
+
+        browser.ignoreSynchronization = true;//for ignore angularjs
+
+        require('./locator/locator-extend.js')(protractor);
         var jasmineReporters = require('jasmine-reporters');
         var reporter = new jasmineReporters.JUnitXmlReporter({
             consolidateAll: true,

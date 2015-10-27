@@ -29,12 +29,14 @@ npm install
 
 ```
 
-# jasmine must use 2.0.0
+## jasmine must use 2.0.0
 
 ```
 npm install --save-dev jasmine-reporters@^2.0.0
 
 ```
+
+# might use ''React.addons.TestUtils'' to the test case
 
 # todo
 

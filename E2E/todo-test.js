@@ -3,7 +3,7 @@
  */
 
 describe('protractor homepage', function () {
-    it('Todo demo test case', function () {
+    it('Todo demo add todo', function () {
         browser.get('http://localhost:8080');
 
         // by id
