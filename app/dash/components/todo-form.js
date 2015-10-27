@@ -13,7 +13,8 @@ export default React.createClass({
             date: date
         };
         TodoListService.addTodo(todo);
-        PubSub.publish('reloadTodoList');
+        var newData = TodoListService.getTodoList();
+        PubSub.publish('reloadTodoList', newData);
     },
 
     render: function () {

@@ -19,7 +19,7 @@ class TodoList {
     }
 
     getNextId() {
-        var result = 1, i = 0;
+        var result = 0, i = 0;
         for (; i < this.todoList.length; i++) {
             var id = this.todoList[i].id;
             if (id > result) {

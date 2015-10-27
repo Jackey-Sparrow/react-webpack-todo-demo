@@ -12,11 +12,12 @@ export default React.createClass({
         e.preventDefault();
         debugger;
         TodoListService.removeTodoById(this.state.todo.id);
-        PubSub.publish('reloadTodoList');
+        var newData = TodoListService.getTodoList();
+        PubSub.publish('reloadTodoList',newData);
     },
     render: function () {
         return (
-            <div className='todo-item' key={this.state.todo.id}>
+            <div className='todo-item'>
                 <div className='todo-id todo-field'>{this.state.todo.id}</div>
                 <div className='todo-description todo-field'>{this.state.todo.description}</div>
                 <div className='todo-date todo-field'>{this.state.todo.date}</div>

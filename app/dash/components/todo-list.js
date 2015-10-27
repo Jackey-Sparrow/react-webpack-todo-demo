@@ -10,11 +10,11 @@ export default  React.createClass({
         }
     },
     componentDidMount: function () {
-        this.pubsub = PubSub.subscribe('reloadTodoList', function () {
+        this.pubsub = PubSub.subscribe('reloadTodoList', function (name, data) {
             debugger;
 
             this.setState({
-                todoList: TodoListService.getTodoList()
+                todoList: data
             });
         }.bind(this));
     },
@@ -24,7 +24,7 @@ export default  React.createClass({
     render: function () {
         var todoList = this.state.todoList.map(function (todo) {
             return (
-                <Todo todo={todo}/>
+                <Todo todo={todo} key={todo.id}/>
             );
         }.bind(this));
 
