@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
- <testsuite name="protractor homepage" timestamp="2015-10-27T22:42:29" hostname="localhost" time="9.681" errors="0" tests="1" skipped="0" failures="0">
-  <testcase classname="protractor homepage" name="Todo demo test case" time="9.68">
+ <testsuite name="protractor homepage" timestamp="2015-10-27T23:16:30" hostname="localhost" time="8.899" errors="0" tests="1" skipped="0" failures="0">
+  <testcase classname="protractor homepage" name="Todo demo add todo" time="8.897">
   </testcase>
  </testsuite>
 </testsuites>

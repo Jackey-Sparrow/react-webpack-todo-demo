@@ -9,6 +9,10 @@ describe('protractor homepage', function () {
         // by id
         element(by.id('todoDescription')).sendKeys(' Jackey test');
 
+        element.all(by.getTodoListCount()).count().then(function (data) {
+            console.log(data);
+        });
+
         //by ng-model
         //element(by.model('userName')).sendKeys(' Sparrow model test');
 

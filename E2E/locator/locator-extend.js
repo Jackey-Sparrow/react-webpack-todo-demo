@@ -11,5 +11,9 @@ var addLacator = function (protractor) {
         });
     });
 
+    protractor.By.addLocator('getTodoListCount', function () {
+        return document.querySelectorAll('.todo-item');
+    });
+
 };
 module.exports = addLacator;
