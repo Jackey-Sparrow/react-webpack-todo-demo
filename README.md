@@ -18,10 +18,25 @@ http://localhost:8080/
 - es6
 - ReactJs todo demo
 
+# E2E
+
+```
+npm install -g protractor
+
+cd C:\Program Files\nodejs\node_global\node_modules\protractor
+
+npm install
+
+```
+
+# jasmine must use 2.0.0
+
+```
+npm install --save-dev jasmine-reporters@^2.0.0
+
+```
+
 # todo
 
 load css background img(url-loader)
 
-# issue
-
-there is a problem when I try to setState

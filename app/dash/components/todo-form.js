@@ -20,7 +20,7 @@ export default React.createClass({
     render: function () {
         return (
             <form className='todo-form' onSubmit={this.onSubmit}>
-                <input type='text' placeholder='描述' ref='description'/>
+                <input type='text' id='todoDescription' placeholder='描述' ref='description'/>
                 <input type='date' ref='todoDate'/>
                 <input type='submit' value='提交'/>
             </form>

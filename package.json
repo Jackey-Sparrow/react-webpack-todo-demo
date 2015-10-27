@@ -38,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/Jackey-Sparrow/react-webpack-practise/issues"
   },
-  "homepage": "https://github.com/Jackey-Sparrow/react-webpack-practise"
+  "homepage": "https://github.com/Jackey-Sparrow/react-webpack-practise",
+  "devDependencies": {
+    "jasmine-reporters": "^2.0.0"
+  }
 }
