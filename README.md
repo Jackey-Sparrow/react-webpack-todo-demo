@@ -36,7 +36,7 @@ npm install --save-dev jasmine-reporters@^2.0.0
 
 ```
 
-# might use ''React.addons.TestUtils'' to the test case
+# might use Jest Unit test
 
 # todo
 
