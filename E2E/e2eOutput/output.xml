@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
- <testsuite name="protractor homepage" timestamp="2015-10-27T23:16:30" hostname="localhost" time="8.899" errors="0" tests="1" skipped="0" failures="0">
-  <testcase classname="protractor homepage" name="Todo demo add todo" time="8.897">
+ <testsuite name="protractor homepage" timestamp="2015-10-28T20:03:57" hostname="localhost" time="8.516" errors="0" tests="3" skipped="0" failures="0">
+  <testcase classname="protractor homepage" name="open the browser" time="3.885">
+  </testcase>
+  <testcase classname="protractor homepage" name="Todo demo add todo" time="2.464">
+  </testcase>
+  <testcase classname="protractor homepage" name="Todo Test delete function" time="2.165">
   </testcase>
  </testsuite>
 </testsuites>

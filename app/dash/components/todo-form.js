@@ -21,8 +21,8 @@ export default React.createClass({
         return (
             <form className='todo-form' onSubmit={this.onSubmit}>
                 <input type='text' id='todoDescription' placeholder='描述' ref='description'/>
-                <input type='date' ref='todoDate'/>
-                <input type='submit' value='提交'/>
+                <input type='date' id='todoDate' ref='todoDate'/>
+                <input type='submit' id='submitTodo' value='提交'/>
             </form>
         );
     }
